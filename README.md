@@ -105,6 +105,32 @@
 
 ```
 
+## Pass by reference 
+### Python
+```
+    List
+    Dictionary
+
+    ------------------------------------------
+    def check(param):
+      print(param)    
+    
+    a=[1,2,3]
+    b=3
+    d={"a":'1',"b":"2"}
+
+    check(a)
+    check(b)
+    check(d)
+```
+### Javascript
+```
+    Objects
+    Array
+    Function
+    -------------------------------------------
+```
+
 ## Equality
 ### Python
 ```
@@ -168,6 +194,23 @@
 ### Javascript
 ```
     typeof(x)
+```
+
+## Function
+### Python
+```
+    def keyword
+```
+### Javascript
+```
+    function keyword
+    Accessing a function without () returns the function and not the function result
+    --------------------------------------------------
+    function toCelsius(fahrenheit) {
+        return (5/9) * (fahrenheit-32);
+    }
+
+    let value = toCelsius; 
 ```
 
 # Type casting
