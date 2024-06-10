@@ -204,6 +204,49 @@
 ### Javascript
 ```
     function keyword
+
+    arrow functions and methods wont use keyword function
+
+    arrow functions and constructor => anonymous function
+
+
+
+    Can also have properties and methods
+
+    Function expression and function decleration
+
+        const square = function (n) {  # Function expression 
+            return n * n;
+        };
+
+        function square(n) {           # Function decleration
+            return n * n;
+        }
+
+        function name and variable the function is assigned to
+    Function hoisting: 
+        function can be called before decleration
+
+    First-class Function : 
+        functions are treated like any other variable
+        a function can be - passed as an argument to other functions
+                          - returned by another function (callback)
+                          ------------------------------------------
+                          function returnFunction(){
+                            return=()=>{
+                                console.log("hello");
+                            }
+                          }
+    Function() constructor : 
+        constructor can be slower than defining functions
+        ----------------------------------------------------
+        let args = 'a, b';
+        let body = 'return a + b;';
+        let sumFunction = new Function(args, body);
+       
+    
+    --------------------------------------------------
+
     Accessing a function without () returns the function and not the function result
     --------------------------------------------------
     function toCelsius(fahrenheit) {
@@ -211,6 +254,47 @@
     }
 
     let value = toCelsius; 
+
+    toCelsius refers to the function object, and toCelsius() refers to the function result.
+```
+
+## Function Params
+### Python
+```
+    arbitrary number of params:
+        using * -> tuple
+        def abc(*numbers)
+
+    keyword arguements:
+        def abc(number1,number2): -> Dictionary
+
+        abc(number1:1,number2:2);
+    Arbitrary Keyword Arguments:
+        def abc(**numbers) -> Dictionary
+
+        abc(number1:1,number2:2);
+
+    Positional-Only Arguments: 
+        def abc(numbers,/)
+
+        abc(3)
+
+    Keyword-Only Arguments:
+        def abc(*,number1)
+
+        abc(number1:1)
+
+```
+### Javascript
+```
+    defalt params:
+        function abc(a=1,b)
+    rest params:
+        function abc(...numbers){}
+        ---------------------------------
+        abc(1,2,3)
+        abc(1,2,3,4,5)
+    destructing
 ```
 
 # Type casting
