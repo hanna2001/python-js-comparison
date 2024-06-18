@@ -295,6 +295,9 @@
         abc(1,2,3)
         abc(1,2,3,4,5)
     destructing
+        function abc(numbers1,number2){}
+        --------------------
+        abc([1,2])
 ```
 
 # Type casting
@@ -319,3 +322,106 @@
     String(3)
     String([1,2,3])
 ```
+
+
+## Objects
+### Python
+```
+    Dictionaries
+```
+### Javascript
+```
+    assigns many values in a variable
+
+    defining:
+        JavaScript Object Literal
+            {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}
+        Using the new Keyword
+
+    Objects are mutable
+
+    can have methods
+
+```
+
+## Object property delete
+### Python
+```
+    dictionary.clear()            -> clears the whole dictionary        
+    dictionary.pop(key, default)  -> pops the key, and returns its value else default
+    dictionary.popitem()          -> delete last entry
+```
+### Javascript
+```
+    delete obj.property_name
+```
+
+
+## Object display
+### Python
+```
+    dict_name[key]
+    dict_name.get(key,default)
+
+
+    dict_name.keys()   -> return all keys as a list
+    dict_name.values() -> return all values as a list
+    dict_name.items()  -> return all key, value as a list of tuple [ (key1,val1), (key2,val2)..]
+```
+### Javascript
+```
+    Object.keys(obj)   -> return all keys as an array
+    Object.values(obj)    -> return all value as an array
+    Object.entries(obj)   -> Array of entries // [ [ key1 , val1 ] , [ key2 , val2] ]
+
+```
+
+## Index of an element 
+### Python
+```
+    index()
+    x = fruits.index("cherry")
+
+    method only returns the first occurrence
+
+    rindex(element,beg,end)  
+        raises execption in case of failure
+```
+### Javascript
+```
+  - indexOf()       -> starts at a specified index and searches from left to right -> faster
+    lastIndexOf()   -> finds the last index and rest same as indexOf()
+
+  - findIndex()     -> uses a callback -> not on empty arrays
+    find()
+    findLastIndex()
+    findLast()
+
+   array=[1,2,3,5,6,2]
+   array.indexOf(2)   // 1
+   array.indexOf(2,2) // 6
+   
+   const isLarger=(ele)=>ele>4;
+   array.findIndex(isLarger);    // 3 -> gets the index of first value that satisfies the condition
+    returns -1 : failure
+   array.find(isLarger);         // 5 -> gets the first value that satisfies the condition
+    returns undefined : failure
+
+
+```
+
+
+## Sort Reverse in python
+### Python
+```
+    list.sort(reverse=True,key)
+    list=list[::-1]
+    
+```
+### Javascript
+```
+   array.reverse()     -> reverses the original array , array is modified
+   array.toReveresed() -> new array created
+
+```
+
